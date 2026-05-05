@@ -30,6 +30,30 @@ func newData(paymentData PaymentData) (data *bytes.Buffer) {
 	return bytes.NewBuffer(jsonData)
 }
 
+// newDataWithConfig constructs and returns zeno.Data using the passed configurations
+func newDataWithConfig(paymentData PaymentData, config Options) (data *bytes.Buffer) {
+
+	// construct and return data
+	orderData := map[string]any{
+		"order_id":    paymentData.OrderID,
+		"buyer_email": paymentData.Email,
+		"buyer_name":  paymentData.Name,
+		"buyer_phone": paymentData.Phone,
+		"amount":      paymentData.Amount,
+		"metadata":    paymentData.MetaData,
+		"webhook_url": config.CallbackURL,
+	}
+
+	// convert data to json
+	jsonData, err := json.Marshal(orderData)
+	if err != nil {
+		zLog(err.Error())
+		return data
+	}
+
+	return bytes.NewBuffer(jsonData)
+}
+
 // zenoRes holds data about status json data returned by the Zeno API
 type zenoRes struct {
 	Status     string `json:"status"`
