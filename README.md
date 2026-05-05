@@ -22,7 +22,7 @@ This package is an elegant solution for developers in the **Golang community**, 
 - **Contact Details**:
   - WhatsApp: [+255785453830](https://wa.me/255785453830)
   - Email: [thegreatdilunga@gmail.com](mailto:thegreatdilunga@gmail.com)
-  - GitHub: [github.com/dilungasr](https://github.com/dilungasr)
+  - GitHub: [github.com/dilungalabs](https://github.com/dilungalabs)
 
 > Feel free to reach out for assistance, feedback, or collaboration opportunities!
 
@@ -41,7 +41,7 @@ To start using this package, register and verify your account with [Zenopay](htt
 ### **Step 2: Install the Package**
 
 ```bash
-go get github.com/dilungasr/zeno
+go get github.com/dilungalabs/zeno
 ```
 
 ---
@@ -55,7 +55,7 @@ Before creating a payment, configure the package with your API credentials.
 ```go
 package main
 
-import "github.com/dilungasr/zeno"
+import "github.com/dilungalabs/zeno"
 
 func main() {
     zeno.ConfigAPI("your-account-id", "your-api-key", "your-secret-key")
@@ -71,7 +71,7 @@ package main
 
 import (
     "fmt"
-    "github.com/dilungasr/zeno"
+    "github.com/dilungalabs/zeno"
 )
 
 func main() {
@@ -183,7 +183,7 @@ Zenopay automatically expires a user's USSD prompt session after 50 seconds. Pol
 
 This package is written by **Dilunga the Great** for the Golang community and is open source.
 
-- **GitHub Repository**: [github.com/dilungasr/zeno](https://github.com/dilungasr/zeno)
+- **GitHub Repository**: [github.com/dilungalabs/zeno](https://github.com/dilungalabs/zeno)
 - **Zenopay Official Website**: [https://zenopay.net/](https://zenopay.net/)
 - **Contact Author**:k
   - WhatsApp: +255785453830
@@ -194,7 +194,7 @@ Feel free to contribute, report issues, or contact me for further assistance.
 ## **License**
 
 This package is **open-source**, created for the Go community by **Dilunga the Great**.  
-Feel free to contribute, report issues, or suggest enhancements on [GitHub](https://github.com/dilungasr/zeno).
+Feel free to contribute, report issues, or suggest enhancements on [GitHub](https://github.com/dilungalabs/zeno).
 
 > "Code is poetry, and simplicity is key." — Dilunga the Great
 
